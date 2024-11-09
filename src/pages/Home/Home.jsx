@@ -2,6 +2,7 @@ import Counter from "../../components/Counter"
 import State from "../../components/State";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../../features/Counters/CounterSlice";
+import Posts from "../../components/Posts";
 
 
 
@@ -24,7 +25,7 @@ const Home = () => {
 
 
     return (
-        <div className="m-screen h-screen p-10 bg-gray-100 text-slate-700">
+        <div className=" p-10 bg-gray-100 text-slate-700">
             <h1 className="mx-auto text-center text-4xl font-bold">
                 Simple Counter Application
             </h1>
@@ -39,6 +40,7 @@ const Home = () => {
                     )
                 }
                 <State totalCount={totalCount}/>
+                <Posts/>
             </div>
             
         </div>
